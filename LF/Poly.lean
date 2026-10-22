@@ -843,7 +843,9 @@ do it and it works, but it felt awkward. Perhaps introduce
 :::::exercise (rating := 3) (name := "unzip") (manual := true)
 The function `unzip` goes in the other direction from {name}`zip`: it takes a list of pairs and returns a pair of lists.
 
-Fill in the definition of `unzip` below and write simplification rules that characterize it.
+Fill in the definition of `unzip` below and write simplification rules that characterize it. You already know how to extract the
+results of a call to `unzip` into variables with `match`, but
+you can use `let (l₁, l₂) := unzip ...` instead of `match`.
 Make sure it that passes the given unit test.
 Prove `unzip_test_fst` and `unzip_test_snd` by rewriting with your simplification lemmas instead of using `rfl` directly. Remember that you can use `dsimp only` to simplify expressions accessing the `fst`
 or `snd` elements of a pair.

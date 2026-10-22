@@ -676,6 +676,10 @@ Prove that {name}`unzip'` and {name}`zip` are inverses in the following sense.
 Remember that you can use `dsimp only` to simplify expressions involving
 pairs and `fst` and `snd`.
 
+When doing induction on List `l` here, you need to keep lists
+`l₁` and `l₂` generalized. This will be explained later in this
+chapter. For now, use the statement `induction l generalizing l₁ l₂ with`
+
 ```lean
 theorem zip_unzip' {α β : Type} (l : List (α × β))
     (l₁ : List α) (l₂ : List β)
