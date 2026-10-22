@@ -666,6 +666,12 @@ def unzip' {α β : Type} (l : List (α × β)) : List α × List β := solution
 :::autogradedHole unzip'
 :::
 
+:::dev "Mark Wutka (@wutka)"
+The proof below uses "generalizing", but that is not introduced
+until later in the chapter. I was unable to get the proof to
+work without it.
+:::
+
 Prove that {name}`unzip'` and {name}`zip` are inverses in the following sense.
 Remember that you can use `dsimp only` to simplify expressions involving
 pairs and `fst` and `snd`.

@@ -832,6 +832,13 @@ checking your answers in Lean:
 :::::
 ::::::
 
+:::dev "Mark Wutka (@wutka)"
+The unzip implementation below relies on "let", but "let" is
+not introduced until the Tactics chapter. I used match to
+do it and it works, but it felt awkward. Perhaps introduce
+"let" earlier?
+:::
+
 ::::::full
 :::::exercise (rating := 3) (name := "unzip") (manual := true)
 The function `unzip` goes in the other direction from {name}`zip`: it takes a list of pairs and returns a pair of lists.
